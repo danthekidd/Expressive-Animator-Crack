@@ -1,5 +1,5 @@
 # Expressive-Animator-Crack
-for people who want Expressive Animator free of cost :)
+a userscript for people who want Expressive Animator free of cost :)
 
 V2 IS OUT AND WORKING!!!
 
