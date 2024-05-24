@@ -9,8 +9,7 @@
 // @run-at       document-start
 // @license MIT
 // @namespace https://greasyfork.org/users/1287532
-// @downloadURL https://update.greasyfork.org/scripts/492385/Expressive%20Animator%20Crack.user.js
-// @updateURL https://update.greasyfork.org/scripts/492385/Expressive%20Animator%20Crack.meta.js
+// @downloadURL https://github.com/danthekidd/Expressive-Animator-Crack/raw/main/Expressive%20Animator%20Crack.user.js
 // ==/UserScript==
 
 (function() {
