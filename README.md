@@ -5,4 +5,4 @@ note: I am sorry I had to obfuscate the code. if you really want the source, mes
 
 [link to userscript](https://github.com/danthekidd/Expressive-Animator-Crack/raw/main/Expressive%20Animator%20Crack.user.js)
 
-[link to patched v1](https://greasyfork.org/en/scripts/492385-expressive-animator-crack-read-desc)
+<sub>[link to patched v1](https://greasyfork.org/en/scripts/492385-expressive-animator-crack-read-desc)</sub>
