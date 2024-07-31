@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Expressive Animator Crack
+// @name         Expressive Animator Crack V2 (PATCHED)
 // @version      2.0.0
 // @description  Expressive Animator for free.
 // @author       danthekidd
