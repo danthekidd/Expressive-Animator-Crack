@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Expressive Animator Crack V3
-// @version      3.0.0
+// @version      3.1.0
 // @description  Expressive Animator for free.
 // @author       danthekidd
 // @match        https://animator.expressive.app/*
@@ -15,6 +15,16 @@
 (function() {
     'use strict';
 
+    async function clearCache() {
+        var cache = await caches.open("animator-1718281115095-9257")
+        var cacheKeys = await cache.keys()
+
+        await Promise.all(
+            cacheKeys.map(request => cache.delete(request))
+        )
+    }
+
+    setTimeout(clearCache,100)
 
     function toBase64(buffer) {
         var binary = '';
@@ -26,6 +36,7 @@
     }
 
     async function injectSerial() {
+
         await (async function() {
             var dir = await navigator.storage.getDirectory();
             var fileHandle = await dir.getFileHandle('sn', {
