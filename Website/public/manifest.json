@@ -1,0 +1,168 @@
+{
+    "short_name": "Expressive Animator",
+    "name": "Expressive Animator",
+    "icons": [
+        {
+            "src": "/icons/icon-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/icons/icon-57.png",
+            "type": "image/png",
+            "sizes": "57x57"
+        },
+        {
+            "src": "/icons/icon-60.png",
+            "type": "image/png",
+            "sizes": "60x60"
+        },
+        {
+            "src": "/icons/icon-72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/icons/icon-76.png",
+            "type": "image/png",
+            "sizes": "76x76"
+        },
+        {
+            "src": "/icons/icon-114.png",
+            "type": "image/png",
+            "sizes": "114x114"
+        },
+        {
+            "src": "/icons/icon-120.png",
+            "type": "image/png",
+            "sizes": "120x120"
+        },
+        {
+            "src": "/icons/icon-144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/icons/icon-152.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "/icons/icon-180.png",
+            "type": "image/png",
+            "sizes": "180x180"
+        },
+        {
+            "src": "/icons/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/icons/icon-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/icons/icon-384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "/icons/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#2f2f2f",
+    "display": "standalone",
+    "scope": "/",
+    "description": "Create professional 2D motion graphics and vector animations for any platform",
+    "launch_handler": {
+        "client_mode": "navigate-new"
+    },
+    "file_handlers": [
+        {
+            "action": "/",
+            "name": "Expressive Animator File",
+            "accept": {
+                "application/vnd.expressive.animator": [
+                    ".eaf"
+                ]
+            },
+            "launch_type": "single-client",
+            "icons": [
+                {
+                    "src": "/icons/icon-48.png",
+                    "type": "image/png",
+                    "sizes": "48x48"
+                },
+                {
+                    "src": "/icons/icon-57.png",
+                    "type": "image/png",
+                    "sizes": "57x57"
+                },
+                {
+                    "src": "/icons/icon-60.png",
+                    "type": "image/png",
+                    "sizes": "60x60"
+                },
+                {
+                    "src": "/icons/icon-72.png",
+                    "type": "image/png",
+                    "sizes": "72x72"
+                },
+                {
+                    "src": "/icons/icon-76.png",
+                    "type": "image/png",
+                    "sizes": "76x76"
+                },
+                {
+                    "src": "/icons/icon-114.png",
+                    "type": "image/png",
+                    "sizes": "114x114"
+                },
+                {
+                    "src": "/icons/icon-120.png",
+                    "type": "image/png",
+                    "sizes": "120x120"
+                },
+                {
+                    "src": "/icons/icon-144.png",
+                    "type": "image/png",
+                    "sizes": "144x144"
+                },
+                {
+                    "src": "/icons/icon-152.png",
+                    "type": "image/png",
+                    "sizes": "152x152"
+                },
+                {
+                    "src": "/icons/icon-180.png",
+                    "type": "image/png",
+                    "sizes": "180x180"
+                },
+                {
+                    "src": "/icons/icon-192.png",
+                    "type": "image/png",
+                    "sizes": "192x192"
+                },
+                {
+                    "src": "/icons/icon-256.png",
+                    "type": "image/png",
+                    "sizes": "256x256"
+                },
+                {
+                    "src": "/icons/icon-384.png",
+                    "type": "image/png",
+                    "sizes": "384x384"
+                },
+                {
+                    "src": "/icons/icon-512.png",
+                    "type": "image/png",
+                    "sizes": "512x512"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Permissions-Policy" content="unload=self">
+    <title>Expressive Animator</title>
+    <meta name="theme-color" content="#FFF">
+    <!-- Load custom icon sets -->
+    <meta name="expressive:icon-set:expr" content="/assets/icons/expr.svg">
+    <meta name="expressive:icon-set:workflow" content="/assets/icons/workflow.svg">
+    <meta name="expressive:service-worker" content="/sw.js">
+    <!-- Fallback font -->
+    <meta name="expressive:font" content="/assets/fonts/SourceSans3-VariableFont_wght.ttf">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="manifest" href="/manifest.json">
+    <!-- Styles -->
+    <style>
+        :root {
+            --expressive-app-name: "Animator";
+            --expressive-app-logo: url("/assets/animator/logo.svg");
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/ui/style.css">
+    <script defer data-domain="animator.expressive.app" data-api="https://community.expressivesuite.com/api/event"
+        src="https://community.expressivesuite.com/js/script.manual.js"></script>
+    <script>window.plausible = window.plausible || function () {(window.plausible.q = window.plausible.q || []).push(arguments)};Object.freeze(SubtleCrypto.prototype)</script>
+    <script defer type="module" src="/assets/animator/boot.js"></script>
+    <script defer nomodule src="/assets/animator/fail.js"></script>
+</head>
+<body>
+<div id="expr-overlay" class="themed">
+    <div id="expr-overlay-logo-container">
+        <div id="expr-overlay-logo"></div>
+        <div id="expr-overlay-app">
+            <div>Expressive</div>
+            <div>Animator (CRACKED)</div>
+        </div>
+    </div>
+    <div id="expr-overlay-version">v2024.1.1</div>
+    <div id="expr-overlay-text" data-text-placeholder>Initializing...</div>
+</div>
+<cc-shell id="app" class="themed"></cc-shell>
+</body>
+</html>

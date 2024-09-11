@@ -1,0 +1,273 @@
+@font-face {
+    font-family: -expressive-sans;
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url('/assets/fonts/SourceSans3-VariableFont_wght.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: -expressive-sans;
+    font-style: italic;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url('/assets/fonts/SourceSans3-Italic-VariableFont_wght.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: -expressive-serif;
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url('/assets/fonts/SourceSerif4-VariableFont_opsz,wght.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: -expressive-serif;
+    font-style: italic;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url('/assets/fonts/SourceSerif4-Italic-VariableFont_opsz,wght.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: -expressive-mono;
+    font-style: normal;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url('/assets/fonts/SourceCodePro-VariableFont_wght.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: -expressive-mono;
+    font-style: italic;
+    font-weight: 200 900;
+    font-display: swap;
+    src: url('/assets/fonts/SourceCodePro-Italic-VariableFont_wght.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: -expressive-keys;
+    font-style: normal;
+    font-weight: 100 800;
+    font-display: swap;
+    src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: -expressive-keys;
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 800;
+    font-display: swap;
+    src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overscroll-behavior: none;
+}
+
+*,
+*::before,
+*::after {
+    font-family: -expressive-sans, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Gray */
+    --black: #000;
+    --gray-1000: #111;
+    --gray-900: #1D1D1D;
+    --gray-800: #323232;
+    --gray-700: #3F3F3F;
+    --gray-600: #4E4E4E;
+    --gray-500: #707070;
+    --gray-400: #909090;
+    --gray-300: #D1D1D1;
+    --gray-200: #D9D9D9;
+    --gray-100: #EBEBEB;
+    --gray-50: #F5F5F5;
+    --white: #FFF;
+
+    /* Success, Warning, Error */
+    --success-color: #16a34a;
+    --warning-color: #f59e0b;
+    --error-color: #f43f5e;
+    --info-color: #2563eb;
+
+    --accent-color-50: #eff6ff;
+    --accent-color-100: #dbeafe;
+    --accent-color-200: #bfdbfe;
+    --accent-color-300: #93c5fd;
+    --accent-color-400: #60a5fa;
+    --accent-color-500: #3b82f6;
+    --accent-color-600: #2563eb;
+    --accent-color-700: #1d4ed8;
+    --accent-color-800: #1e40af;
+    --accent-color-900: #1e3a8a;
+    --accent-color-950: #172554;
+    --accent-color-1000: #040C25;
+
+
+    --chess-gradient: repeating-conic-gradient(#929292 0% 25%, #fff 0% 50%);
+
+    /* Scroll */
+    --scrollbar-size: 6px;
+    --border-size: 1px;
+
+    /* Implicit */
+    --scrollbar-color: #D9D9D9C0;
+    --canvas-color: var(--gray-100);
+    --text-color-default: var(--gray-800);
+}
+
+
+html {
+    --theme: auto;
+}
+
+body {
+    container-type: normal;
+    container-name: --theme-provider;
+}
+
+@container style(--theme: auto) {
+    @media (prefers-color-scheme: light) {
+        body {
+            --theme: light;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            --theme: dark;
+        }
+    }
+}
+
+@container --theme-provider style(--theme: dark) {
+    body > .themed {
+        --canvas-color: var(--gray-1000);
+        --separator-color: var(--gray-1000);
+        --surface-color: var(--gray-900);
+        --surface-hover-color: var(--gray-800);
+        --scrollbar-color: #3F3F3FC0;
+
+        --text-color-default: var(--gray-300);
+        --text-color-lighter: var(--white);
+        --text-color-darker: var(--gray-400);
+    }
+}
+
+@container --theme-provider style(--theme: light) {
+    body > .themed {
+        --canvas-color: var(--gray-100);
+        --separator-color: var(--gray-100);
+        --surface-color: var(--white);
+        --surface-hover-color: var(--gray-50);
+        --scrollbar-color: #D9D9D9C0;
+
+        --text-color-default: var(--gray-800);
+        --text-color-lighter: var(--gray-500);
+        --text-color-darker: var(--gray-1000);
+    }
+}
+
+*::-webkit-scrollbar {
+    width: var(--scrollbar-size);
+    height: var(--scrollbar-size);
+}
+
+*::-webkit-scrollbar-corner {
+    display: none;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color);
+    box-sizing: border-box;
+    border: var(--border-size) solid transparent;
+    border-radius: var(--scrollbar-size);
+}
+
+
+/** Loading screen **/
+
+#expr-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: var(--canvas-color);
+    color: var(--text-color-default);
+    font-size: 14px;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+#expr-overlay-logo-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+#expr-overlay-logo {
+    background-image: var(--expressive-app-logo);
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 96px;
+    height: 96px;
+}
+
+#expr-overlay-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    gap: 4px;
+}
+
+
+#expr-overlay-app :first-child {
+    font-size: 24px;
+}
+
+#expr-overlay-app :last-child {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#expr-overlay-version {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#expr-overlay-text {
+    text-align: center;
+    max-width: 70ch;
+    min-height: 42px;
+}
+
+#expr-overlay[error] #expr-overlay-text {
+    user-select: text;
+}
+
+#expr-overlay[error] #expr-overlay-text::before {
+    content: "⚠️";
+}

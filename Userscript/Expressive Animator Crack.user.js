@@ -35,7 +35,7 @@
         return btoa(binary);
     }
 
-    async function injectSerial() {
+    async function injectLicense() {
 
         await (async function() {
             var dir = await navigator.storage.getDirectory();
@@ -96,7 +96,7 @@
                     return response.text();
                 })
                 .then(scriptContent => {
-                    injectSerial().then(function() {
+                    injectLicense().then(function() {
                         const modifiedContent = scriptContent
                             .replace(
                                 /!await Ht\[n\(q\._0xfd7603,0,q\._0x582b02,q\._0x4713c0,q\._0x484246\)\]\(be,a\)/g,
