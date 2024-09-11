@@ -29,13 +29,11 @@
     }
 
     async function injectLicense() {
-
         await (async function() {
             var dir = await navigator.storage.getDirectory();
             var fileHandle = await dir.getFileHandle('sn', {
                 create: true
             });
-            var file = await fileHandle.getFile();
             var writable = await fileHandle.createWritable();
             await writable.write("FAKESERIAL");
             await writable.close();

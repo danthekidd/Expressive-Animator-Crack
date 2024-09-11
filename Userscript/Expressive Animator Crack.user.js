@@ -26,15 +26,6 @@
 
     setTimeout(clearCache,100)
 
-    function toBase64(buffer) {
-        var binary = '';
-        var bytes = new Uint8Array(buffer);
-        for (let i = 0; i < bytes.length; i++) {
-            binary += String.fromCharCode(bytes[i]);
-        }
-        return btoa(binary);
-    }
-
     async function injectLicense() {
 
         await (async function() {
@@ -42,7 +33,6 @@
             var fileHandle = await dir.getFileHandle('sn', {
                 create: true
             });
-            var file = await fileHandle.getFile();
             var writable = await fileHandle.createWritable();
             await writable.write("FAKESERIAL");
             await writable.close();
