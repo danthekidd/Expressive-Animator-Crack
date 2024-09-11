@@ -1,7 +1,9 @@
 # Expressive Animator Crack
 > a userscript for people who want Expressive Animator free of cost :)
 
-IF IT DOES NOT WORK, REFRESH! Keep refreshing until it works. This is needed because V3 uses a mutation observer that does not always load in before the script to inject to.
+IF THE USERSCRIPT DOES NOT WORK, REFRESH! Keep refreshing until it works. This is needed because V3 uses a mutation observer that does not always load in before the script to inject to.
+
+Expressive dev team, contact me via Discord. My username is vex.mp3.
 
 [link to cracked website v2024.1.1](https://expressive-animator-cracked.web.app/)
 
