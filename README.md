@@ -56,7 +56,6 @@ The script uses a mutation observer to modify boot.js before it loads to inject 
 The website is cloned and rehosted on Google Firebase with a modified boot.js and app.js. The boot.js script is modified to inject a fake license and app.js is modified to bypass RSA signature verification.
 
 ### Pros
-- Very simple
 - Works out-of-the-box
 - Will not be patched when other methods are
 
