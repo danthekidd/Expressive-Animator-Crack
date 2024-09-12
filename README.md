@@ -11,6 +11,7 @@ There are three methods you can use:
 2. Open DevTools (`Ctrl + Shift + I` or `Cmd + Option + I`) on Expressive Animator
 3. Navigate to the Console tab
 4. Paste the code and run
+5. Refresh
 
 > NOTE: Pasting in the console is by default not allowed. If you cannot paste, type out "allow pasting" in the console and press Enter.
 
