@@ -13,7 +13,7 @@ There are three methods you can use:
 4. Paste the code and run
 5. Refresh the page
 
-> NOTE: Pasting in the console is by default not allowed. If you cannot paste, type out "allow pasting" in the console and press Enter.
+> NOTE: Pasting in the console is by default not allowed on most browsers. If you cannot paste, type out "allow pasting" in the console and press Enter.
 
 ### How It Works
 The script will inject fake request cache to respond with a modified boot.js and app.js. The boot.js script is modified to inject a fake license and app.js is modified to bypass RSA signature verification.
