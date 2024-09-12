@@ -7,7 +7,7 @@ There are three methods you can use:
 
 ## Method 1: WCP (Web Cache Poisoning)
 ### Instructions
-1. Copy the code from the [WCP script](https://github.com/danthekidd/Expressive-Animator-Crack/raw/main/Userscript/Expressive%20Animator%20Crack.user.js)
+1. Copy the code from the [WCP script](https://raw.githubusercontent.com/danthekidd/Expressive-Animator-Crack/main/WCP/Expressive%20Animator%20Crack.js)
 2. Open DevTools (`Ctrl + Shift + I` or `Cmd + Option + I`) on Expressive Animator
 3. Navigate to the Console tab
 4. Paste the code and run
@@ -28,7 +28,7 @@ There are three methods you can use:
 ## Method 2: Userscript
 ### Instructions
 1. Install a Userscript manager (I recommend [ViolentMonkey](https://violentmonkey.github.io/))
-2. Open the [Userscript](https://raw.githubusercontent.com/danthekidd/Expressive-Animator-Crack/main/WCP/Expressive%20Animator%20Crack.js) and install when prompted
+2. Open the [Userscript](https://github.com/danthekidd/Expressive-Animator-Crack/raw/main/Userscript/Expressive%20Animator%20Crack.user.js) and install when prompted
 
 ### Pros
 - Works as long as the Userscript is enabled
