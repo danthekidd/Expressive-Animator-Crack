@@ -1,4 +1,4 @@
-# Expressive Animator Crack
+# [Expressive Animator](https://animator.expressive.app/) Crack
 
 There are three methods you can use:
 - [Method 1: WCP (Web Cache Poisoning)](#method-1-wcp-web-cache-poisoning)
@@ -8,7 +8,7 @@ There are three methods you can use:
 ## Method 1: WCP (Web Cache Poisoning)
 ### Instructions
 1. Copy the code from the [WCP script](https://raw.githubusercontent.com/danthekidd/Expressive-Animator-Crack/main/WCP/Expressive%20Animator%20Crack.js)
-2. Open DevTools (`Ctrl + Shift + I` or `Cmd + Option + I`) on Expressive Animator
+2. Open DevTools (`Ctrl + Shift + I` or `Cmd + Option + I`) on [Expressive Animator](https://animator.expressive.app/)
 3. Navigate to the Console tab
 4. Paste the code and run
 5. Refresh the page
